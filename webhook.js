@@ -18,6 +18,6 @@ const rumCommand = (cmd, args, callback) => {
 }
 handler.on('push', event => {
     rumCommand('sh', ['./sh/build.sh'], txt => {
-        console.log(txt)
+        console.log(txt);
     })
 });
