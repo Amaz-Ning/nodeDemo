@@ -21,4 +21,4 @@ handler.on('push', event => {
     rumCommand('sh', ['./sh/build.sh'], txt => {
         console.log(txt);
     })
-})
+});
