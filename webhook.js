@@ -4,10 +4,10 @@ const handler = createHandler({
     path: '/',
 });
 http.createServer((req, res) => {
-    handler(req, res, () => {
+    // handler(req, res, () => {
 
-    })
-    res.end('webhook');
+    // })
+    res.end('webshook');
 }).listen(9000)
 
 const rumCommand = (cmd, args, callback) => {
@@ -18,6 +18,6 @@ const rumCommand = (cmd, args, callback) => {
 }
 handler.on('push', event => {
     rumCommand('sh', ['./sh/build.sh'], txt => {
-        console.log(txt);
+        console.log(txt)
     })
 });
