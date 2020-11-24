@@ -2,7 +2,6 @@ const http = require('http');
 const createHandler = require('coding-webhook-handler');
 const handler = createHandler({
     path: '/',
-    token: '1993'
 });
 http.createServer((req, res) => {
     handler(req, res, () => {
